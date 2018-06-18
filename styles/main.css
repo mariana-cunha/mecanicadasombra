@@ -1,0 +1,54 @@
+* {
+  font-family: "Roboto";
+  list-style: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px;
+  position: relative;
+}
+nav .logo img {
+  width: 170px;
+}
+nav .menu ul {
+  display: inline;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+}
+nav .menu li {
+  padding-right: 50px;
+  display: inline;
+}
+nav .menu a {
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  color: green;
+}
+
+.trailerVimeo iframe {
+  border: none;
+  height: 545px;
+  width: 1346px;
+}
+
+footer {
+  background-color: #333333;
+  display: flex;
+  justify-content: center;
+}
+footer img {
+  width: 120px;
+  height: 20px;
+  padding: 16px 3px;
+}
