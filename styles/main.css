@@ -88,16 +88,6 @@ nav .menu a {
   }
 }
 
-.imageMakingOFF {
-  width: 50%;
-}
-
-@media (max-width: 378px) {
-  .imageMakingOFF {
-    display: none;
-  }
-}
-
 .thanksTO {
   background-image: url("../assets/id/poster-mecanica3.jpg");
   margin: 0;
