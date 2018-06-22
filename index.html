@@ -7,9 +7,9 @@
     <meta name="keywords" content="mecânica da sombra, curta, brasil, curtametragem, cinema, cinema independente, rato safado">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="./styles/main.css"/>
-    <!-- <script src="main.js"></script> -->
-    <script src="https://player.vimeo.com/api/player.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,900,900i" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Expanded" rel="stylesheet">
+    <link rel="icon" type="imagem/jpg" href="./assets/id/mecanica-icon2.jpg"/>
+    
 </head>
 <body>
     <nav>
@@ -18,36 +18,69 @@
                 <img src="assets/id/titulo.png" alt="título do curta 'mecânica da sombra' que ao clicar direciona para a homepage">
             </a>
         </div>
-        <div class="menu">
+        <!-- <div class="menu">
             <ul>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Sobre</a></li>
+                <li><a href="#">sinopse</a></li>
+                <li><a href="#">bastidores</a></li>
+                <li><a href="#">equipe</a></li>
             </ul>
-        </div>
+        </div> -->
     </nav>
+    <section class="trailer">
+        <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/260987347?autoplay=1&loop=1&muted=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+        <div class="gifTrailer">
+            <img src="./assets/id/sinopseMobile.gif" alt="gif do trailer do curta Mecânica da Sombra">
+        </div>
+    </section>
 
-    <div class="trailerVimeo">
-            <iframe id="ytplayer" type="text/html" width="720" height="405"
-            src="https://www.youtube.com/embed/M7lc1UVf-VE?autoplay=1&controls=0&loop=1&rel=0&showinfo=0"
-            frameborder="0" allowfullscreen>
+    <section class="sinopse">
+        <h2>sinopse</h2>
+        <div class="textSinopse">
+            <p class="sinopseTexto">Após uma mudança de moradia que veio mais tarde do que o planejado, Moacir (Alberto Pereira Jr.) embarca em uma busca por respostas e novas perspectivas.</p>
+            <p class="sinopseTexto"> Ao encontrar uma realidade de não pertencimento, além da dificuldade de adaptação e as lutas internas, o filho da dor começa a questionar algumas questões envolvendo a relação com família, as raízes e o espaço e tempo em que vive.</p>
+            <p class="sinopseTexto">Moacir se encontra perdido e forçado a compreender essas novas reflexões a respeito de si e ao ambiente que o cerca nesse processo de autoconhecimento.</p>
+        </div>
+    </section>
 
+    <section>
+        <div class="imageMakingOFF">
+            <img src="./assets/content/img/MdS-5.jpg" alt="foto dos bastidores do curta">
+        </div>
+    </section>
 
-            <!-- <iframe id="ytplayer" type="text/html" width="1346" height="545"
-            src="https://www.youtube.com/watch?v=yXrlhebkpIQ-VE?autoplay=1&controls=0&loop=1&rel=0&showinfo=0"
-            frameborder="0" allowfullscreen>  -->
+    <!-- <section class="gallery">
+        <div>
+            <img src="./assets/content/img/MdS-3.jpg" id="gallerymds" alt="foto dos bastidores">
+        </div>
+        <div class="btn-gallery">
+            <button id="muda" onclick="mudafoto()">botao</button>
+        </div>
+    </section> -->
 
-
-        <!-- <div style="padding:56.25% 0 0 0;position:relative;">
-            <iframe src="https://player.vimeo.com/video/260987347?autoplay=1&loop=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
-            </iframe> -->
-
-
-            <!-- <iframe width="562" height="317" src="https://www.youtube.com/embed/0VvNZWXDzHg?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>         </div>-->
-    </div>
-
+    <section class="thanksTO">
+        <h2>equipe</h2>
+        <div class="listMdS">
+            <p class="team">Direção e roteiro: Gabriel Mendes da Costa</p>
+            <p class="team">Assistente de direção: Tayane Capelo</p>
+            <p class="team">Moacir: Alberto Pereira Jr</p>
+        </div>
+        <div class="listMdS">      
+            <p class="team">Fotografia: Nicole Zabukas, Augusto Vieira</p>      
+            <p class="team">Produção: Gabriel Mendes, Tayane Capelo</p>
+            <p class="team">Assistente de produção: Bruno Bechara, Lucca Cozzolino, Pedro Piccoli</p>       
+        </div>
+        <div class="listMdS">
+            <p class="team">Som: Bárbara Nascimento, Henrique Gentil, Luana Freiras</p>       
+            <p class="team">Edição: Matheus Verissimo, Heitor Mendes</p>       
+            <p class="team">Trilha: Ezequiel Siqueira, Philippe Meyohas</p>
+            <p class="team">Poster: Victor Antônio de Oliveira</p>
+        </div>
+    </section>
     <footer>
-        <p>Site desenvolvido por Mariana Cunha &</p> <img src="./assets/content/img/reprograma.png" class="logo-reprograma" alt="logo do curso de programação só para mulheres chamado Reprograma">
+        <div class="credits">
+            <p>site desenvolvido por Mariana Cunha &</p> <img src="./assets/content/img/reprograma.png" class="logo-reprograma" alt="logo do curso de programação só para mulheres chamado Reprograma">
+        </div>
     </footer>
+    <script src="main.js"></script>
 </body>
 </html>
