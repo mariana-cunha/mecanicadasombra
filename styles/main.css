@@ -11,8 +11,12 @@ body {
 }
 
 h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: white;
   padding: 10px;
   text-shadow: 2px 2px 1px rgba(24, 64, 82, 0.3);
@@ -20,8 +24,12 @@ h2 {
 
 nav {
   background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 7px;
 }
 
@@ -31,8 +39,12 @@ nav .logo img {
 
 nav .menu ul {
   display: inline;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0 40px;
 }
 
@@ -43,15 +55,22 @@ nav .menu li {
 
 nav .menu a {
   text-decoration: none;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #f3f1e5;
 }
 
 .sinopse {
   background: url(../assets/id/lambe.jpg);
+  display: -ms-grid;
   display: grid;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .sinopse .sinopseTexto {
@@ -83,6 +102,8 @@ nav .menu a {
 
 @media (max-width: 378px) {
   .trailer .gifTrailer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100vw;
   }
@@ -92,8 +113,11 @@ nav .menu a {
   background-image: url("../assets/id/poster-mecanica3.jpg");
   margin: 0;
   padding: 15px;
+  display: -ms-grid;
   display: grid;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .thanksTO .listMdS {
@@ -113,15 +137,21 @@ nav .menu a {
 @media (max-width: 378px) {
   .thanksTO .listMdS .team {
     width: 390px;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     font-size: 15px;
   }
 }
 
 footer .credits {
   background-color: #333333;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 footer .credits p {
