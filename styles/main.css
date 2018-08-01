@@ -5,11 +5,6 @@
   padding: 0;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-}
-
 h2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -17,43 +12,44 @@ h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: white;
+  color: #000000;
   padding: 10px;
-  text-shadow: 2px 2px 1px rgba(24, 64, 82, 0.3);
 }
 
-nav {
-  background-color: black;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+p {
+  color: #000000;
+  font-size: 10px;
+  font-weight: lighter;
+  padding: 5px 0px;
+  text-align: center;
+}
+
+.sidebar {
+  height: 100%;
+  width: 190px;
+  background-color: #ffffff;
+  position: fixed;
+  z-index: 1;
+}
+
+.sidebar .logo img {
+  width: 170px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 7px;
 }
 
-nav .logo img {
-  width: 170px;
-}
-
-nav .menu ul {
-  display: inline;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.sidebar ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 40px;
 }
 
-nav .menu li {
-  padding-right: 50px;
-  display: inline;
-}
-
-nav .menu a {
+.sidebar a {
   text-decoration: none;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -61,33 +57,35 @@ nav .menu a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #f3f1e5;
+  color: #000000;
 }
 
-.sinopse {
-  background: url(../assets/id/lambe.jpg);
-  display: -ms-grid;
-  display: grid;
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 100%;
 }
 
-.sinopse .sinopseTexto {
-  width: 400px;
-  color: white;
-  font-size: 20px;
-  font-weight: lighter;
-  padding: 20px 0px;
-  text-align: center;
-  text-shadow: 2px 2px 1px rgba(24, 64, 82, 0.3);
+footer p {
+  font-size: 10px;
+  padding: 17px 5px;
+  color: #000000;
 }
 
-@media (max-width: 378px) {
-  .sinopse .sinopseTexto {
-    width: 350px;
-    font-size: 15px;
-  }
+footer a {
+  text-decoration: none;
+  color: #000000;
+}
+
+footer a:hover {
+  color: #9562a4;
 }
 
 @media (max-width: 378px) {
@@ -110,9 +108,7 @@ nav .menu a {
 }
 
 .thanksTO {
-  background-image: url("../assets/id/poster-mecanica3.jpg");
   margin: 0;
-  padding: 15px;
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: center;
@@ -126,12 +122,11 @@ nav .menu a {
 
 .thanksTO .listMdS .team {
   width: 400px;
-  color: white;
-  font-size: 20px;
+  color: #000000;
+  font-size: 10px;
   font-weight: lighter;
   padding: 5px 0px;
   text-align: center;
-  text-shadow: 2px 2px 1px rgba(24, 64, 82, 0.3);
 }
 
 @media (max-width: 378px) {
@@ -144,25 +139,22 @@ nav .menu a {
   }
 }
 
-footer .credits {
-  background-color: #333333;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.sinopse {
+  display: -ms-grid;
+  display: grid;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-footer .credits p {
-  font-size: 13px;
-  font-weight: lighter;
-  padding: 17px 5px;
+.sinopse .sinopseTexto {
+  width: 600px;
 }
 
-footer img {
-  width: 60px;
-  height: 10px;
-  padding: 20px 0px;
+@media (max-width: 378px) {
+  .sinopse .sinopseTexto {
+    width: 350px;
+    font-size: 15px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

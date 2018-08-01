@@ -1,3 +1,5 @@
+// general styles //
+
 * {
     font-family: 'Encode Sans Semi Expanded', sans-serif;
     list-style: none;
@@ -5,78 +7,83 @@
     padding: 0;
 }
 
-body { 
-    margin: 0;
-    padding: 0;
-}
-
 h2 {
     display: flex;
     justify-content: center;
-    color: white;
+    color: #000000;
     padding: 10px;
-    text-shadow: 2px 2px 1px rgba(24, 64, 82, 0.3);
+    // text-shadow: 2px 2px 1px rgba(24, 64, 82, 0.3);
 }
 
-nav { 
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    padding: 7px;
+p { 
+    color: #000000;
+    font-size: 10px;
+    font-weight: lighter;
+    padding: 5px 0px;
+    text-align: center;
+}
+
+.sidebar { 
+    height: 100%;
+    width: 190px;
+    background-color: #ffffff;
+    position: fixed;
+    z-index: 1;
 
     .logo img { 
         width: 170px;
+        justify-content: center;
     }
 
-    .menu {
+    ul { 
+        display: grid;
+        justify-content: space-around;
+        align-items: center;
+        // padding: 0 40px;
+    }
 
-        ul { 
-            display: inline;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 40px;
-        }
+    li { 
+        // padding-right: 50px;
 
-        li { 
-            padding-right: 50px;
-            display: inline;            
+    }
 
-        }
-
-        a { 
-            text-decoration: none;
-            justify-content: center;
-            align-items: center;
-            color: #f3f1e5;
-        }
-        
+    a { 
+        text-decoration: none;
+        justify-content: center;
+        align-items: center;
+        color: #000000;
     }
 
 }
 
 
-.sinopse { 
-    // background: url(../assets/id/sinopseGIF1.gif);
-    background: url(../assets/id/lambe.jpg);
-    display: grid;
+footer { 
+    display: flex;
+    align-items: flex-end;
     justify-content: center;
+    width: 100%;
 
-    .sinopseTexto { 
-        width: 400px;
-        color: white;
-        font-size: 20px;
-        font-weight: lighter;
-        padding: 20px 0px;
-        text-align: center;
-        text-shadow: 2px 2px 1px rgba(24, 64, 82, 0.3);
-
-        @media (max-width:378px) {
-            width: 350px;
-            font-size: 15px;
-        }
-
+    p {
+        font-size: 10px;
+        // font-weight: lighter;
+        padding: 17px 5px;
+        color: #000000;
     }
+
+    a { 
+        text-decoration: none;
+        color: #000000;
+    }
+
+    a:hover {
+        color: #9562a4;
+    }
+
 }
+
+// pages //
+
+// index // 
 
 .trailer { 
     div {
@@ -94,6 +101,66 @@ nav {
     }
 }
 
+// cast //
+
+.thanksTO { 
+    margin: 0;
+    // padding: 15px;
+    display: grid;
+    justify-content: center;
+    // width: 100%;
+
+    .listMdS { 
+        width: 400px;
+
+        .team { 
+            width: 400px;
+            color: #000000;
+            font-size: 10px;
+            font-weight: lighter;
+            padding: 5px 0px;
+            text-align: center;
+            // text-shadow: 2px 2px 1px rgba(24, 64, 82, 0.3);
+    
+            @media (max-width:378px) {
+                width: 390px;
+                justify-content: center;
+                font-size: 15px;
+            }
+    
+        }
+
+    }
+
+}
+
+// sinopse //
+
+.sinopse { 
+    // background: url(../assets/id/sinopseGIF1.gif);
+    // background: url(../assets/id/lambe.jpg);
+    display: grid;
+    justify-content: center;
+
+    .sinopseTexto { 
+        width: 600px;
+        // color: white;
+        // font-size: 20px;
+        // font-weight: lighter;
+        // padding: 20px 0px;
+        // text-align: center;
+        // text-shadow: 2px 2px 1px rgba(24, 64, 82, 0.3);
+
+        @media (max-width:378px) {
+            width: 350px;
+            font-size: 15px;
+        }
+
+    }
+}
+
+// making-off //
+
 // .imageMakingOFF { 
 //     width: 50%;
 
@@ -110,56 +177,4 @@ nav {
 //     }
 // }
 
-.thanksTO { 
-    background-image: url('../assets/id/poster-mecanica3.jpg');
-    margin: 0;
-    padding: 15px;
-    display: grid;
-    justify-content: center;
 
-    // width: 100vw;
-
-    .listMdS { 
-        width: 400px;
-
-        .team { 
-            width: 400px;
-            color: white;
-            font-size: 20px;
-            font-weight: lighter;
-            padding: 5px 0px;
-            text-align: center;
-            text-shadow: 2px 2px 1px rgba(24, 64, 82, 0.3);
-    
-            @media (max-width:378px) {
-                width: 390px;
-                justify-content: center;
-                font-size: 15px;
-            }
-    
-        }
-
-    }
-
-}
-
-footer { 
-    .credits{
-        background-color: #333333;
-        display: flex;
-        justify-content: center;
-
-
-        p {
-            font-size: 13px;
-            font-weight: lighter;
-            padding: 17px 5px;
-        }
-    }
-    
-    img { 
-        width: 60px;
-        height: 10px;
-        padding: 20px 0px;
-    }
-}
