@@ -32,11 +32,43 @@ p {
   z-index: 1;
 }
 
+@media (max-width: 768px) {
+  .sidebar {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 .sidebar .logo img {
   width: 170px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .sidebar .logo img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.sidebar .menu-hamburguer {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .sidebar .menu-hamburguer {
+    display: -ms-grid;
+    display: grid;
+    height: 3vw;
+  }
 }
 
 .sidebar ul {
@@ -49,7 +81,20 @@ p {
           align-items: center;
 }
 
-.sidebar a {
+@media (max-width: 768px) {
+  .sidebar ul {
+    display: none;
+  }
+}
+
+.sidebar ul #flip, .sidebar ul #painel {
+  padding: 5px;
+  text-align: center;
+  background-color: #f6f6f6;
+  border: solid 1px #f6f6f6;
+}
+
+.sidebar ul li a {
   text-decoration: none;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -58,6 +103,21 @@ p {
       -ms-flex-align: center;
           align-items: center;
   color: #000000;
+}
+
+.sidebar .instagram {
+  display: -ms-grid;
+  display: grid;
+  padding-top: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .sidebar .instagram {
+    padding-top: 0px;
+  }
 }
 
 footer {
@@ -88,26 +148,130 @@ footer a:hover {
   color: #9562a4;
 }
 
+.principal {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 600px;
+  padding: 100px 370px;
+}
+
 @media (max-width: 378px) {
-  .trailer div {
-    display: none;
+  .principal {
+    width: 80px;
+    padding: 140px 120px;
   }
 }
 
-.trailer .gifTrailer {
+.principal img {
+  width: 400px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 378px) {
+  .principal img {
+    width: 80vw;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.principal .buttons {
+  padding: 0 115px;
+}
+
+@media (max-width: 378px) {
+  .principal .buttons {
+    padding: 10px 55px;
+  }
+}
+
+.principal .buttons .languageOption {
+  background-color: #b64242e5;
+  border-radius: 22px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 15px 25px;
+  text-decoration: none;
+}
+
+.principal .buttons .languageOption:hover {
+  background-color: #b83f3f;
+}
+
+.principal .buttons .languageOption:active {
+  position: relative;
+  top: 1px;
+}
+
+.content .trailer-pc {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 10px 330px;
+}
+
+@media (max-width: 768px) {
+  .content .trailer-pc {
+    padding: 10px 50px;
+  }
+}
+
+@media (max-width: 320px) {
+  .content .trailer-pc {
+    display: none;
+    padding-left: 0;
+  }
+}
+
+.content .mobile {
   display: none;
 }
 
-@media (max-width: 378px) {
-  .trailer .gifTrailer {
+@media (max-width: 640px) {
+  .content .mobile {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 100vw;
   }
 }
 
-.thanksTO {
+.content .cast {
+  width: 600px;
+  padding: 15px 360px;
+}
+
+@media (min-width: 768px) {
+  .content .cast {
+    padding: 15px 50px;
+    width: 300px;
+  }
+}
+
+@media (min-width: 360px) {
+  .content .cast {
+    padding: 15px 30px;
+    width: 300px;
+  }
+}
+
+.content .cast h3 {
+  font-size: 20px;
+}
+
+.content .cast p {
+  text-align: start;
+}
+
+.crew-list {
   margin: 0;
   display: -ms-grid;
   display: grid;
@@ -116,11 +280,11 @@ footer a:hover {
           justify-content: center;
 }
 
-.thanksTO .listMdS {
+.crew-list .list {
   width: 400px;
 }
 
-.thanksTO .listMdS .team {
+.crew-list .list .team {
   width: 400px;
   color: #000000;
   font-size: 10px;
@@ -130,7 +294,7 @@ footer a:hover {
 }
 
 @media (max-width: 378px) {
-  .thanksTO .listMdS .team {
+  .crew-list .list .team {
     width: 390px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -139,22 +303,7 @@ footer a:hover {
   }
 }
 
-.sinopse {
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.sinopse .sinopseTexto {
-  width: 600px;
-}
-
-@media (max-width: 378px) {
-  .sinopse .sinopseTexto {
-    width: 350px;
-    font-size: 15px;
-  }
+.poster {
+  width: 307px;
 }
 /*# sourceMappingURL=main.css.map */
