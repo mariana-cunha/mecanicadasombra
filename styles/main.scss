@@ -20,7 +20,12 @@ p {
     font-size: 10px;
     font-weight: lighter;
     padding: 5px 0px;
-    text-align: center;
+    text-align: start;
+    line-height: 1.6;
+}
+
+h3 { 
+    font-size: 20px;
 }
 
 .sidebar { 
@@ -184,7 +189,8 @@ footer {
         padding: 10px 330px;
 
         @media (max-width:768px){
-            padding: 10px 50px;
+            padding: 10px 20px;
+            display: none;
         }
 
         @media (max-width:320px){
@@ -193,41 +199,35 @@ footer {
         }
     }
 
-    .mobile { 
-        display: none;
+    // .mobile { 
+    //     display: none;
 
-        @media (max-width:640px) {
-            display: flex;
-        }
+    //     @media (max-width:640px) {
+    //         display: flex;
+    //     }
+
+    //     @media (max-width:320px){
+    //         display: none;
+    //     }
 
 
-    }
+    // }
 
     .cast {
         width: 600px;
-        padding: 15px 360px;
+        padding: 15px 330px;
 
-        @media (min-width:768px){
-            padding: 15px 50px;
+        @media (min-width:361px) { 
+            padding: 10px;
             width: 300px;
         }
 
-        @media (min-width:360px) { 
-            padding: 15px 30px;
+        @media (max-width:768px){
+            padding: 15px 20px;
             width: 300px;
-        }
-
-        h3 { 
-            font-size: 20px;
-        }
-
-        p { 
-            text-align: start;
         }
     }
 }
-
-
 
 // crew //
 
