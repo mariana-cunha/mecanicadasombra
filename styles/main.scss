@@ -203,11 +203,11 @@ footer {
         display: none;
 
         @media (max-width:640px) {
-            display: flex;
+            display: grid;
         }
 
         @media (max-width:320px){
-            display: none;
+            display: grid;
         }
 
 
