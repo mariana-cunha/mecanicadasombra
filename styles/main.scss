@@ -199,25 +199,25 @@ footer {
         }
     }
 
-    // .mobile { 
-    //     display: none;
+    .mobile { 
+        display: none;
 
-    //     @media (max-width:640px) {
-    //         display: flex;
-    //     }
+        @media (max-width:640px) {
+            display: flex;
+        }
 
-    //     @media (max-width:320px){
-    //         display: none;
-    //     }
+        @media (max-width:320px){
+            display: none;
+        }
 
 
-    // }
+    }
 
     .cast {
         width: 600px;
         padding: 15px 330px;
 
-        @media (min-width:361px) { 
+        @media (max-width:361px) { 
             padding: 10px;
             width: 300px;
         }

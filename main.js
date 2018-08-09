@@ -1,6 +1,6 @@
 // menu hamburguer mobile
 
-<script>
+
     $(document).ready(function () {
         $('ul').hover(function () {
             $(this).find('.menu-content').slideDown();
@@ -8,4 +8,4 @@
             $(this).find('.menu-content').slideUp();
         });
     });
-</script>
+
