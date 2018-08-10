@@ -9,36 +9,62 @@
     <link rel="stylesheet" type="text/css" media="screen" href="../styles/main.css"/>
     <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Expanded" rel="stylesheet">
     <link rel="icon" type="imagem/jpg" href="../assets/id/mecanica-icon2.jpg"/>
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
     <div class="sidebar">
         <div class="logo">
-            <a href="https://www.instagram.com/mecanicadasombra/">
-                <img src="../assets/id/logo-preto.png" alt="'mecânica da sombra' logo, redirects to homepage">
+            <a href="index-en.html">
+                <img src="../assets/id/logo-preto.png" alt="título do curta 'mecânica da sombra' que ao clicar direciona para a homepage">
             </a>
         </div>
-        <ul>
+
+        <ul class="menu-pc">
             <li><a href="index-en.html">teaser</a></li>
             <li><a href="making-off-en.html">bastidores</a></li>
-            <li><a href="cast.html-en">equipe</a></li>
+            <li><a href="crew-en.html">equipe</a></li>
         </ul>
 
-        <a class="instagram" target="_blank" href="https://www.instagram.com/mecanicadasombra/">
-            <img src="../assets/instagram-logo.png" alt="check our instagram page">
-        </a>
+        <!-- menu mobile -->
+        <div class="menu-mobile">
+            <ul>
+                <li>
+                    <a class="menu-top"><img src="../assets/menu.png" alt="botão do menu"></a>
+                    <div class="menu-content">
+                        <a href="index-en.html">teaser</a>
+                        <a href="making-off-en.html">bastidores</a>
+                        <a href="crew-en.html">equipe</a>
+                    </div>
+                </li>
+            </ul>
+            
+            
+            <script>
+                $(document).ready(function () {
+                    $(".menu-top").click(function() {
+                        $(".menu-content").toggle();
+                    });
+                });
+            </script>
+        </div>
+        
     </div>
-
 
     <!-- content -->
 
     <section class="content">
-        <div>
-            <iframe src="https://player.vimeo.com/video/260987347?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+        <div class="trailer-pc">
+            <iframe src="https://player.vimeo.com/video/260987347?title=0&byline=0&portrait=0" width="840" height="560" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         </div>
-    
+
+        <div class="mobile">
+            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/260987347?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+        </div>
+        
+
         <!-- ficha técnica -->
-    
+
         <div class="cast">
             <h3>ficha técnica</h3>
             <p>MECÂNICA DA SOMBRA (2018)</p>
@@ -46,12 +72,13 @@
             <h3>sinopse</h3>
             <p>Moacir, filho da dor, sofre uma mudança tardia em busca de transformações. E ao encontrar uma realidade de não pertencimento e dificuldade de adaptação, reconhece esse novo espaço de sua própria maneira e em seu ritmo, e a partir desse ponto, começa a indagar algumas questões, como sua relação com a família e raízes, e o espaço e o tempo em que vive. Trazendo à tona novas reflexões a respeito de si e ao ambiente que o cerca nesse processo de autoconhecimento.</p>
         </div>
-    </section>    
+    </section>
 
     <footer>
-        <p>developed by <a href="http://github.com/mariana-cunha">Mariana Cunha</a></p>
+        <a class="instagram" target="_blank" href="https://www.instagram.com/mecanicadasombra/">
+            <img src="../assets/instagram-logo.png" alt="logo do instagram que redireciona para a rede social do curta-metragem">
+        </a>
+        <p> <span style="color: #9562a4;">•</span> site desenvolvido por <a href="http://github.com/mariana-cunha">Mariana Cunha</a></p>
     </footer>
-
-    <script src="main.js"></script>
 </body>
 </html>

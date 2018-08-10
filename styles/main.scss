@@ -47,20 +47,33 @@ h3 {
 
         @media (max-width:768px) {
             display: flex;
+            padding-left: 30px;
         }
 
     }
 
-    .menu-hamburguer { 
+    .menu-mobile { 
         display: none;
+
+
+        @media (min-width:320px) {
+            display: none;
+            height: 3vw;
+            padding: 16px 100px;
+        }
 
         @media (max-width:768px) {
             display: grid;
             height: 3vw;
+
+            .menu-content { 
+                display: none;
+                background-color: #ffffff;
+            }
         }
     }
 
-    ul { 
+    .menu-pc { 
         display: grid;
         justify-content: space-around;
         align-items: center;
@@ -89,19 +102,7 @@ h3 {
             }
         }
     }
-
-    .instagram { 
-        display: grid;
-        padding-top: 50px;
-        justify-content: center;
-
-        @media (max-width:768px) {
-            padding-top: 0px;
-        }
-    }
-
 }
-
 
 footer { 
     display: flex;
@@ -123,6 +124,16 @@ footer {
 
     a:hover {
         color: #9562a4;
+    }
+
+    .instagram { 
+        display: grid;
+        padding-top: 50px;
+        justify-content: center;
+    
+        @media (max-width:768px) {
+            padding-top: 0px;
+        }
     }
 
 }
@@ -223,7 +234,7 @@ footer {
         }
 
         @media (max-width:768px){
-            padding: 15px 20px;
+            padding: 15px 10px;
             width: 300px;
         }
     }

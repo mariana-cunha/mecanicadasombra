@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="../styles/main.css"/>
     <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Expanded" rel="stylesheet">
-    <link rel="icon" type="imagem/jpg" href="./assets/id/mecanica-icon2.jpg"/>
+    <link rel="icon" type="imagem/jpg" href="../assets/id/mecanica-icon2.jpg"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
@@ -20,15 +20,35 @@
                 <img src="../assets/id/logo-preto.png" alt="título do curta 'mecânica da sombra' que ao clicar direciona para a homepage">
             </a>
         </div>
-        <ul>
+
+        <ul class="menu-pc">
             <li><a href="index-pt.html">teaser</a></li>
             <li><a href="making-off-pt.html">bastidores</a></li>
             <li><a href="crew-pt.html">equipe</a></li>
         </ul>
 
-        <a class="instagram" target="_blank" href="https://www.instagram.com/mecanicadasombra/">
-            <img src="../assets/instagram-logo.png" alt="logo do instagram que redireciona para a rede social do curta-metragem">
-        </a>
+        <!-- menu mobile -->
+        <div class="menu-mobile">
+            <ul>
+                <li>
+                    <a class="menu-top"><img src="../assets/menu.png" alt="botão do menu"></a>
+                    <div class="menu-content">
+                        <a href="index-pt.html">teaser</a>
+                        <a href="making-off-pt.html">bastidores</a>
+                        <a href="crew-pt.html">equipe</a>
+                    </div>
+                </li>
+            </ul>
+            
+            <script>
+                $(document).ready(function () {
+                    $(".menu-top").click(function() {
+                        $(".menu-content").toggle();
+                    });
+                });
+            </script>
+        </div>
+        
     </div>
 
     <!-- content -->
@@ -56,7 +76,10 @@
     </section>
 
     <footer>
-        <p>site desenvolvido por <a href="http://github.com/mariana-cunha">Mariana Cunha</a></p>
+        <a class="instagram" target="_blank" href="https://www.instagram.com/mecanicadasombra/">
+            <img src="../assets/instagram-logo.png" alt="logo do instagram que redireciona para a rede social do curta-metragem">
+        </a>
+        <p> <span style="color: #9562a4;">•</span> site desenvolvido por <a href="http://github.com/mariana-cunha">Mariana Cunha</a></p>
     </footer>
 
     <!-- <script src="main.js"></script> -->
