@@ -28,6 +28,15 @@ h3 {
     font-size: 20px;
 }
 
+a { 
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+}
+
+//
+
 .sidebar { 
     height: 100%;
     width: 190px;
@@ -47,30 +56,50 @@ h3 {
 
         @media (max-width:768px) {
             display: flex;
-            padding-left: 30px;
+            padding-left: 45px;
         }
 
     }
 
     .menu-mobile { 
         display: none;
+        justify-content: center;
 
 
         @media (min-width:320px) {
             display: none;
-            height: 3vw;
-            padding: 16px 100px;
+            padding: 17px 0px 17px 40px;
         }
 
         @media (max-width:768px) {
             display: grid;
             height: 3vw;
 
-            .menu-content { 
-                display: none;
-                background-color: #ffffff;
-            }
+            
         }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        
+            li { 
+                float: left;
+                padding: 0px 20px;
+                line-height: 40px;
+                cursor: pointer;
+
+                .menu-content { 
+                    display: none;
+                    background-color: #ffffff;
+
+                    a { 
+                        padding: 15px;
+                    }
+                }
+            }
+
+        }   
     }
 
     .menu-pc { 
@@ -83,32 +112,14 @@ h3 {
             display: none;      
         }
 
-
-        #flip, #painel { 
-            padding: 5px;
-            text-align: center;
-            background-color: #f6f6f6;
-            border: solid 1px #f6f6f6;
-        }
-
-        li { 
-            // padding-right: 50px;
-
-            a { 
-                text-decoration: none;
-                justify-content: center;
-                align-items: center;
-                color: #000000;
-            }
-        }
     }
 }
 
 footer { 
     display: flex;
-    align-items: flex-end;
     justify-content: center;
     width: 100%;
+    align-items: center;
 
     p {
         font-size: 10px;

@@ -29,6 +29,17 @@ h3 {
   font-size: 20px;
 }
 
+a {
+  text-decoration: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #000000;
+}
+
 .sidebar {
   height: 100%;
   width: 190px;
@@ -61,19 +72,21 @@ h3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding-left: 30px;
+    padding-left: 45px;
   }
 }
 
 .sidebar .menu-mobile {
   display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media (min-width: 320px) {
   .sidebar .menu-mobile {
     display: none;
-    height: 3vw;
-    padding: 16px 100px;
+    padding: 17px 0px 17px 40px;
   }
 }
 
@@ -83,10 +96,28 @@ h3 {
     display: grid;
     height: 3vw;
   }
-  .sidebar .menu-mobile .menu-content {
-    display: none;
-    background-color: #ffffff;
-  }
+}
+
+.sidebar .menu-mobile ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sidebar .menu-mobile ul li {
+  float: left;
+  padding: 0px 20px;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+.sidebar .menu-mobile ul li .menu-content {
+  display: none;
+  background-color: #ffffff;
+}
+
+.sidebar .menu-mobile ul li .menu-content a {
+  padding: 15px;
 }
 
 .sidebar .menu-pc {
@@ -105,35 +136,17 @@ h3 {
   }
 }
 
-.sidebar .menu-pc #flip, .sidebar .menu-pc #painel {
-  padding: 5px;
-  text-align: center;
-  background-color: #f6f6f6;
-  border: solid 1px #f6f6f6;
-}
-
-.sidebar .menu-pc li a {
-  text-decoration: none;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #000000;
-}
-
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 footer p {
