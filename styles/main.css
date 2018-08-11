@@ -40,6 +40,11 @@ a {
   color: #000000;
 }
 
+.card {
+  width: 600px;
+  padding: 15px 330px;
+}
+
 .sidebar {
   height: 100%;
   width: 190px;
@@ -60,36 +65,39 @@ a {
   }
 }
 
-@media (min-width: 320px) {
-  .sidebar .logo {
-    padding-left: 28px;
-  }
-}
-
-.sidebar .logo img {
-  width: 170px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-bottom: 5px;
-  padding-left: 36px;
+.sidebar .logo a {
+  padding-left: 20px;
+  padding-top: 20px;
 }
 
 @media (min-width: 319px) {
-  .sidebar .logo img {
-    padding-top: 10px;
-    padding-left: 28px;
-    width: 200px;
+  .sidebar .logo a {
+    padding-top: 0px;
+    padding-left: 35px;
+    padding-bottom: 10px;
   }
 }
 
 @media (max-width: 768px) {
-  .sidebar .logo img {
+  .sidebar .logo a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding-left: 28px;
-    width: 200px;
+    padding-left: 0;
+  }
+}
+
+.sidebar .logo a img {
+  width: 200px;
+  padding-left: 0px;
+  padding-top: 20px;
+}
+
+@media (max-width: 320px) {
+  .sidebar .logo a img {
+    padding-bottom: 0px;
+    padding-top: 10px;
+    padding-left: 60px;
   }
 }
 
@@ -320,39 +328,45 @@ footer .instagram {
   }
 }
 
-.crew-list {
-  margin: 0;
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .crew-list .list {
-  width: 400px;
+  padding-top: 20px;
 }
 
-.crew-list .list .team {
-  width: 400px;
-  color: #000000;
-  font-size: 10px;
-  font-weight: lighter;
-  padding: 5px 0px;
-  text-align: center;
+.crew-list .thanks {
+  padding-top: 30px;
 }
 
-@media (max-width: 378px) {
-  .crew-list .list .team {
-    width: 390px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    font-size: 15px;
+.crew-list .pics-crew {
+  padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+  .crew-list .pics-crew img {
+    width: 100vh;
+  }
+}
+
+.cast {
+  width: 600px;
+  padding: 15px 330px;
+}
+
+@media (max-width: 361px) {
+  .cast {
+    padding: 10px;
+    width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cast {
+    padding: 15px 10px;
+    width: 300px;
   }
 }
 
 .poster {
-  width: 307px;
+  width: 540px;
+  padding: 20px 0;
 }
 /*# sourceMappingURL=main.css.map */
