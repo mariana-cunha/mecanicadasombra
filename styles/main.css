@@ -40,9 +40,39 @@ a {
   color: #000000;
 }
 
-.card {
+.cast {
   width: 600px;
-  padding: 15px 330px;
+  padding: 45px 330px 5px;
+}
+
+@media (min-width: 320px) {
+  .cast {
+    width: 300px;
+    padding: 10px 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .cast {
+    width: 600px;
+    padding: 45px 330px 5px;
+  }
+}
+
+.adjust-pic {
+  width: 820px;
+}
+
+@media (min-width: 320px) {
+  .adjust-pic {
+    width: 100vw;
+  }
+}
+
+@media (min-width: 768px) {
+  .adjust-pic {
+    width: 50vw;
+  }
 }
 
 .sidebar {
@@ -66,11 +96,11 @@ a {
 }
 
 .sidebar .logo a {
-  padding-left: 20px;
-  padding-top: 20px;
+  padding: 0;
+  width: 200px;
 }
 
-@media (min-width: 319px) {
+@media (min-width: 320px) {
   .sidebar .logo a {
     padding-top: 0px;
     padding-left: 35px;
@@ -78,26 +108,30 @@ a {
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .sidebar .logo a {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     padding-left: 0;
   }
 }
 
 .sidebar .logo a img {
+  padding-bottom: 0px;
+  padding-top: 10px;
+  padding-left: 10px;
   width: 200px;
-  padding-left: 0px;
-  padding-top: 20px;
 }
 
-@media (max-width: 320px) {
+@media (min-width: 320px) {
   .sidebar .logo a img {
     padding-bottom: 0px;
-    padding-top: 10px;
-    padding-left: 60px;
+    padding-top: 5px;
+    padding-left: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar .logo a img {
+    padding-left: 75px;
   }
 }
 
@@ -214,14 +248,12 @@ footer .instagram {
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  width: 600px;
-  padding: 100px 370px;
+  padding: 370px;
 }
 
-@media (max-width: 378px) {
+@media (min-width: 320px) {
   .principal {
-    width: 80px;
-    padding: 140px 120px;
+    padding: 180px 0px;
   }
 }
 
@@ -232,12 +264,15 @@ footer .instagram {
           justify-content: center;
 }
 
-@media (max-width: 378px) {
+@media (min-width: 320px) {
   .principal img {
-    width: 80vw;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    width: 320px;
+  }
+}
+
+@media (min-width: 768px) {
+  .principal img {
+    width: 200px;
   }
 }
 
@@ -245,9 +280,9 @@ footer .instagram {
   padding: 0 115px;
 }
 
-@media (max-width: 378px) {
+@media (min-width: 320px) {
   .principal .buttons {
-    padding: 10px 55px;
+    padding: 10px 85px;
   }
 }
 
@@ -271,102 +306,60 @@ footer .instagram {
   top: 1px;
 }
 
-.content .trailer-pc {
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding: 10px 330px;
+.content .teaser {
+  width: 800px;
+  padding: 45px 330px 5px;
 }
 
-@media (max-width: 768px) {
-  .content .trailer-pc {
-    padding: 10px 20px;
-    display: none;
+@media (min-width: 320px) {
+  .content .teaser {
+    width: 320px;
+    padding: 10px 0px;
   }
 }
 
-@media (max-width: 320px) {
-  .content .trailer-pc {
-    display: none;
-    padding-left: 0;
+@media (min-width: 768px) {
+  .content .teaser {
+    width: 768px;
+    padding: 45px 330px 5px;
   }
 }
 
-.content .mobile {
-  display: none;
-}
-
-@media (max-width: 640px) {
-  .content .mobile {
-    display: -ms-grid;
-    display: grid;
-  }
-}
-
-@media (max-width: 320px) {
-  .content .mobile {
-    display: -ms-grid;
-    display: grid;
-  }
-}
-
-.content .cast {
-  width: 600px;
-  padding: 15px 330px;
-}
-
-@media (max-width: 361px) {
-  .content .cast {
-    padding: 10px;
-    width: 300px;
-  }
-}
-
-@media (max-width: 768px) {
-  .content .cast {
-    padding: 15px 10px;
-    width: 300px;
-  }
-}
-
-.crew-list .list {
+.list {
   padding-top: 20px;
 }
 
-.crew-list .thanks {
+.thanks {
   padding-top: 30px;
 }
 
-.crew-list .pics-crew {
-  padding: 10px 0;
-}
-
-@media (max-width: 768px) {
-  .crew-list .pics-crew img {
-    width: 100vh;
-  }
-}
-
-.cast {
+.pics-crew {
   width: 600px;
-  padding: 15px 330px;
+  padding: 45px 330px 5px;
 }
 
-@media (max-width: 361px) {
-  .cast {
-    padding: 10px;
+@media (min-width: 320px) {
+  .pics-crew {
     width: 300px;
+    padding: 10px 0;
   }
 }
 
-@media (max-width: 768px) {
-  .cast {
-    padding: 15px 10px;
-    width: 300px;
+@media (min-width: 768px) {
+  .pics-crew {
+    width: 500px;
+    padding: 45px 330px 5px;
   }
 }
 
 .poster {
   width: 540px;
   padding: 20px 0;
+}
+
+@media (min-width: 320px) {
+  .poster {
+    width: 300px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
