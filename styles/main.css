@@ -257,7 +257,13 @@ footer .instagram {
   }
 }
 
-.principal img {
+@media (min-width: 768px) {
+  .principal {
+    padding: 150px 0;
+  }
+}
+
+.principal .logo-index {
   width: 400px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -265,14 +271,16 @@ footer .instagram {
 }
 
 @media (min-width: 320px) {
-  .principal img {
-    width: 320px;
+  .principal .logo-index {
+    width: 250px;
+    padding-left: 35px;
   }
 }
 
 @media (min-width: 768px) {
-  .principal img {
-    width: 200px;
+  .principal .logo-index {
+    width: 350px;
+    padding-left: 0;
   }
 }
 
