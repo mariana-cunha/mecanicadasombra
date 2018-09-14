@@ -109,7 +109,7 @@ a {
                 }
 
                 @media (max-width:768px) { 
-                    padding-left: 75px;
+                    padding-left: 35px;
                 }
             }
         }
@@ -230,7 +230,6 @@ footer {
             width: 350px;
             padding-left: 0;
         }
-
     }
 
     .buttons { 
@@ -263,13 +262,12 @@ footer {
 // index pt/en // 
 
 .content { 
-
     .teaser { 
         width: 800px;
         padding: 45px 330px 5px;
     
         @media (min-width:320px) { 
-            width: 320px;
+            width: 100%;
             padding: 10px 0px;
         }
     
@@ -278,6 +276,10 @@ footer {
             padding: 45px 330px 5px;
         }
     }
+}
+
+.imdb { 
+    width: 30px;
 }
 
 // crew //

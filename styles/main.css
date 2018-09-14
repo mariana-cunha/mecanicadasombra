@@ -131,7 +131,7 @@ a {
 
 @media (max-width: 768px) {
   .sidebar .logo a img {
-    padding-left: 75px;
+    padding-left: 35px;
   }
 }
 
@@ -321,7 +321,7 @@ footer .instagram {
 
 @media (min-width: 320px) {
   .content .teaser {
-    width: 320px;
+    width: 100%;
     padding: 10px 0px;
   }
 }
@@ -331,6 +331,10 @@ footer .instagram {
     width: 768px;
     padding: 45px 330px 5px;
   }
+}
+
+.imdb {
+  width: 30px;
 }
 
 .list {
