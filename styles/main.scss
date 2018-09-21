@@ -284,10 +284,6 @@ footer {
 
 // crew //
 
-.list{
-    padding-top:20px;
-}
-
 .thanks { 
     padding-top: 30px;
 }
@@ -328,7 +324,11 @@ footer {
     }
 
     h1, h3, p { 
-        width: 300px;
+        width: 450px;
+
+        @media (max-width:375px) {
+            width: 300px;
+        }
     }
     
     .frame { 
@@ -341,18 +341,18 @@ footer {
         @media (min-width:320px) { 
             width: 352px;
             height: 520px;
-            padding: 10px 0 0 0;
+            padding: 20px 0 0 0;
         }
     
         @media (min-width:768px){
             width: 600px;
-            padding-left: 150px;
+            padding-left: 200px;
             padding-top: 0px;
             padding-bottom: 30px;
         }
     
         img { 
-            padding: 20px 0;
+            // padding: 20px 0;
             height: 520px;
             display: flex;
         
@@ -364,7 +364,7 @@ footer {
             @media (min-width:768px){
                 width: 350px;
                 height: 530px;
-                padding-top: 0px;
+                // padding-top: 0px;
             }
         }
     }
