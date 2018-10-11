@@ -234,11 +234,9 @@ footer {
 
     .buttons { 
         padding: 0 115px;
-
         @media (min-width:320px) {
             padding: 10px 85px;           
         }
-
         .languageOption {
             background-color:#efcb68;
             border-radius:22px;
@@ -303,8 +301,10 @@ footer {
     }
 
 }
-
 // screenings 
+
+//sobrescreve os paddings no mobile pra que a imagem fique sem borda no 320
+//infelizmente vc vai ter que fazer tudo na mão mesmo, se fodeu
 
 .box-content-screenings {
     display: flex;
@@ -339,7 +339,7 @@ footer {
         // justify-content: flex-end;
     
         @media (min-width:320px) { 
-            width: 352px;
+            width: 100%;
             height: 520px;
             padding: 20px 0 0 0;
         }
@@ -352,13 +352,12 @@ footer {
         }
     
         img { 
-            // padding: 20px 0;
             height: 520px;
             display: flex;
         
             @media (min-width:320px) {
                 width: 100%;
-                height: 520px;
+                height: 490px;
             }
     
             @media (min-width:768px){
