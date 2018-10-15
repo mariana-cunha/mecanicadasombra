@@ -45,17 +45,10 @@ a {
   padding: 45px 330px 5px;
 }
 
-@media (min-width: 320px) {
+@media (max-width: 768px) {
   .box-content {
-    width: 300px;
-    padding: 10px 10px;
-  }
-}
-
-@media (min-width: 768px) {
-  .box-content {
-    width: 600px;
-    padding: 45px 330px 5px;
+    width: 90%;
+    padding: 5px 0 0 25px;
   }
 }
 
@@ -121,17 +114,17 @@ a {
   width: 200px;
 }
 
-@media (min-width: 320px) {
+@media (max-width: 768px) {
+  .sidebar .logo a img {
+    padding-left: 300px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 766px) {
   .sidebar .logo a img {
     padding-bottom: 0px;
     padding-top: 5px;
     padding-left: 40px;
-  }
-}
-
-@media (max-width: 768px) {
-  .sidebar .logo a img {
-    padding-left: 35px;
   }
 }
 
@@ -319,17 +312,17 @@ footer .instagram {
   padding: 45px 330px 5px;
 }
 
-@media (min-width: 320px) {
+@media (max-width: 768px) {
   .content .teaser {
-    width: 100%;
-    padding: 10px 0px;
+    width: 768px;
+    padding: 0px;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 320px) and (max-width: 768px) {
   .content .teaser {
-    width: 768px;
-    padding: 45px 330px 5px;
+    width: 100%;
+    padding: 10px 0px;
   }
 }
 
@@ -346,100 +339,71 @@ footer .instagram {
   padding: 45px 330px 5px;
 }
 
-@media (min-width: 320px) {
-  .pics-crew {
-    width: 300px;
-    padding: 10px 0;
-  }
-}
-
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .pics-crew {
     width: 500px;
-    padding: 45px 330px 5px;
+    padding: 30px 0px 5px 0px;
   }
 }
 
-.box-content-screenings {
+@media (max-width: 320px) {
+  .pics-crew {
+    width: 320px;
+  }
+}
+
+.pics-crew .adjust-pic {
+  width: 800px;
+}
+
+@media (max-width: 768px) {
+  .pics-crew .adjust-pic {
+    width: 100vw;
+  }
+}
+
+.dates-poster {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 600px;
-  padding: 45px 330px 5px;
+  width: 960px;
 }
 
-@media (min-width: 320px) {
-  .box-content-screenings {
-    width: 300px;
-    padding: 10px 10px;
+@media (max-width: 768px) {
+  .dates-poster {
     display: block;
   }
 }
 
-@media (min-width: 768px) {
-  .box-content-screenings {
-    width: 600px;
-    padding: 45px 330px 5px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+.dates-poster .exhibitions {
+  width: 40vh;
+}
+
+@media (max-width: 768px) {
+  .dates-poster .exhibitions {
+    width: 320px;
   }
 }
 
-.box-content-screenings h1, .box-content-screenings h3, .box-content-screenings p {
-  width: 450px;
+.dates-poster .frame {
+  padding-left: 200px;
 }
 
-@media (max-width: 375px) {
-  .box-content-screenings h1, .box-content-screenings h3, .box-content-screenings p {
-    width: 300px;
+@media (max-width: 768px) {
+  .dates-poster .frame {
+    padding-left: 0px;
+    padding-top: 20px;
   }
 }
 
-.box-content-screenings .frame {
-  width: 600px;
-  height: 800px;
-  padding: 45px 330px 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.dates-poster .frame .poster {
+  width: 22vw;
 }
 
-@media (min-width: 320px) {
-  .box-content-screenings .frame {
-    width: 100%;
-    height: 520px;
-    padding: 20px 0 0 0;
-  }
-}
-
-@media (min-width: 768px) {
-  .box-content-screenings .frame {
-    width: 600px;
-    padding-left: 200px;
-    padding-top: 0px;
-    padding-bottom: 30px;
-  }
-}
-
-.box-content-screenings .frame img {
-  height: 520px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-@media (min-width: 320px) {
-  .box-content-screenings .frame img {
-    width: 100%;
-    height: 490px;
-  }
-}
-
-@media (min-width: 768px) {
-  .box-content-screenings .frame img {
-    width: 350px;
-    height: 530px;
+@media (max-width: 768px) {
+  .dates-poster .frame .poster {
+    width: 80vw;
+    height: 118vw;
   }
 }
 /*# sourceMappingURL=main.css.map */
