@@ -402,8 +402,13 @@ footer .instagram {
 
 @media (max-width: 768px) {
   .dates-poster .frame .poster {
+    width: 60vw;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 420px) {
+  .dates-poster .frame .poster {
     width: 80vw;
-    height: 118vw;
   }
 }
 /*# sourceMappingURL=main.css.map */
