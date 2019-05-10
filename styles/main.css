@@ -309,7 +309,7 @@ footer .instagram {
 
 .content .teaser {
   width: 800px;
-  padding: 45px 330px 5px;
+  padding: 45px 210px 5px 330px;
 }
 
 @media (max-width: 768px) {
