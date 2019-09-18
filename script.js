@@ -5,19 +5,19 @@ $(document).ready(function () {
 });
 
 var appointments = {
-    "12h00": {
+    "17h00": {
       "title": "Oficina sobre o filme - Projeto Meninos e Meninas de rua",
       "person": "Rua Jurubatuba, 1610 - Centro - São Bernardo do Campo"
     },
-    "13h00": {
+    "17h00": {
       "title": "Universidade Federal do ABC",
       "person": "Alameda da Universidade, s/n - Anchieta - São Bernardo do Campo"
     },
-    "14h00": {
+    "17h00": {
       "title": "Conversa com a Equipe - Casa da Largatixa Preta",
       "person": "Rua Alcides de Queirós, 161 - Casa Branca - Santo André"
     },
-    "15h00": {
+    "17h00": {
       "title": "Sede da Associação de Moradores da Ocupação Mil e Um Nova Esperança",
       "person": "Jardim Laura - São Bernardo do Campo"
     }
