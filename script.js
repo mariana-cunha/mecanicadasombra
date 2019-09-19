@@ -64,10 +64,15 @@ for (var time in appointments) {
   scheduleDiv.appendChild(appointmentDiv)
 
   var timeAppointment = new Date()
+  // console.log(timeAppointment)
 
   timeAppointment.setHours(parseInt(time.split("h")[0]))
 
   timeAppointment.setMinutes(parseInt(time.split("h")[1]))
+
+  timeAppointment.setMonth(parseInt(time.split("/09")))
+
+  timeAppointment.setDate(parseInt(time.split(" 21")))
 
   timeAppointment = timeAppointment.getTime()
 
