@@ -3,7 +3,6 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 h2 {
@@ -386,6 +385,55 @@ footer .instagram {
   }
 }
 
+.dates-poster .exhibitions #overlay {
+  position: absolute;
+  z-index: 999;
+  bottom: 0;
+  height: 150px;
+  width: 100%;
+  background-color: yellow;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(74%, white), to(white));
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, white 74%, white 100%);
+}
+
+.dates-poster .exhibitions #schedule .appointment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: relative;
+}
+
+.dates-poster .exhibitions #schedule .appointment .circle {
+  position: absolute;
+  background-color: white;
+  border-radius: 100%;
+  border: 2px solid red;
+  left: calc(25% - 5px);
+  top: -5px;
+  width: 12px;
+  height: 12px;
+}
+
+.dates-poster .exhibitions #schedule .appointment .time {
+  width: 25%;
+  margin-top: -8px;
+  text-align: right;
+  padding-right: 20px;
+}
+
+.dates-poster .exhibitions #schedule .appointment .event {
+  padding: 0px 0 10px 15px;
+  border-left: 2px solid red;
+  width: 95%;
+}
+
+.dates-poster .exhibitions #schedule .appointment:last-child .event {
+  padding-bottom: 10px;
+}
+
 .dates-poster .frame {
   padding-left: 200px;
 }
@@ -411,49 +459,5 @@ footer .instagram {
   .dates-poster .frame .poster {
     width: 80vw;
   }
-}
-
-#overlay {
-  position: absolute;
-  z-index: 999;
-  bottom: 0;
-  height: 150px;
-  width: 100%;
-  background-color: yellow;
-  background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 74%,rgba(255,255,255,1) 100%);
-}
-
-#schedule .appointment {
-  display: flex;
-  align-items: flex-start;
-  position: relative;
-}
-
-#schedule .appointment:last-child .event {
-  padding-bottom: 70px;
-}
-
-#schedule .appointment .circle {
-  position: absolute;
-  background-color: white;
-  border-radius: 100%;
-  border: 2px solid red;
-  left: calc(25% - 5px);
-  top: -5px;
-  width: 12px;
-  height: 12px;
-}
-
-#schedule .appointment .time {
-  width: 25%;
-  margin-top: -8px;
-  text-align: right;
-  padding-right: 20px;
-}
-
-#schedule .appointment .event {
-  padding: 0px 0 10px 15px;
-  border-left: 2px solid red;
-  width: 70%;
 }
 /*# sourceMappingURL=main.css.map */
