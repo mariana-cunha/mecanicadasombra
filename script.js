@@ -70,9 +70,9 @@ for (var time in appointments) {
 
   timeAppointment.setMinutes(parseInt(time.split("h")[1]))
 
-  timeAppointment.setMonth(parseInt(time.split("/09")))
+  timeAppointment.setMonth(parseInt(time.split("/")[1]))
 
-  timeAppointment.setDate(parseInt(time.split(" 21")))
+  timeAppointment.setDate(parseInt(time.split("/")[0]))
 
   timeAppointment = timeAppointment.getTime()
 
