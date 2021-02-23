@@ -1,0 +1,80 @@
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    background: #000;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    background: #000;
+}
+
+.swiper-wrapper { 
+    background-color: #000;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #000;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide #bracos img { 
+    width: 100%;
+}
+
+.swiper-container-v {
+    background: #eee;
+}
+
+.swiper-container-vertical>.swiper-pagination-bullets .swiper-pagination-bullet { 
+    color: aqua;
+}
+
+.filmes-abertura { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    background: transparent;
+}
+
+.filmes-abertura img { 
+    max-width: 300px;
+    align-content: center;
+    align-items: center;
+}
+
+/* .filmes-abertura button { 
+    background: transparent;
+    border: none;
+} */
+
+.filmes-abertura li { 
+    list-style-type: none;
+    cursor: pointer;
+}
